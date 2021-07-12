@@ -13,6 +13,11 @@
       </ul>
       <!-- prevents the default action of submitting the form onclick of the button. then the click method is called.-->
       <form v-on:submit.prevent="click">
+        <input
+          type="text"
+          placeholder="Enter the new language"
+          v-model="newLanguage"
+        />
         <button v-on:mouseover="mouseover">Click Me</button>
       </form>
     </div>
@@ -34,11 +39,12 @@ export default {
           dateCreated: "1995",
         },
       ],
+      newLanguage: "",
     };
   },
   methods: {
     click: function() {
-      alert("Hello, you clicked the button!");
+      alert(this.newLanguage);
     },
     mouseover: function() {
       console.log("Your mouse moved over the button.");
