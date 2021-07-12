@@ -4,6 +4,7 @@
     <HelloWorld
       userName="RossKeenan"
       profileImage="https://rosskeenan.com/wp-content/uploads/2020/07/Photo-Jul-10-7-22-30-PMsmaller-2.jpg"
+      userBio="My name is Ross, and I am learning Vue. I am liking it more than React and a lot more than Angular!"
     />
     <!--
     <Commmenting out Bob. We only want one profile in the view at a time.
