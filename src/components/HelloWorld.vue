@@ -20,6 +20,11 @@
         />
         <button v-on:mouseover="mouseover">Click Me</button>
       </form>
+
+      <h2>Click Counter {{ counter }}</h2>
+      <button v-on:click="incrementCounter">
+        Add To The Counter
+      </button>
     </div>
   </div>
 </template>
@@ -40,14 +45,19 @@ export default {
         },
       ],
       newLanguage: "",
+      counter: 0,
     };
   },
   methods: {
     click: function() {
-      alert(this.newLanguage);
+      this.newLanguage =
+        "this was changed on the fly, this is in the component state";
     },
     mouseover: function() {
       console.log("Your mouse moved over the button.");
+    },
+    incrementCounter: function() {
+      this.counter = this.counter + 1;
     },
   },
   props: {
