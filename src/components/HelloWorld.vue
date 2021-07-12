@@ -11,6 +11,7 @@
           {{ item.langName }} | Founded: {{ item.dateCreated }}
         </li>
       </ul>
+      <button v-on:click="click" v-on:mouseover="mouseover">Click Me</button>
     </div>
   </div>
 </template>
@@ -31,6 +32,14 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    click: function() {
+      alert("Hello, you clicked the button!");
+    },
+    mouseover: function() {
+      console.log("Your mouse moved over the button.");
+    },
   },
   props: {
     userName: String,
