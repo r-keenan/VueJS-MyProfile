@@ -23,7 +23,7 @@ export default {
       languages: [
         {
           langName: "Python",
-          dateCreated: "June 1990",
+          dateCreated: "1989",
         },
         {
           langName: "JavaScript",
