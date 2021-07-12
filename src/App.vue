@@ -7,7 +7,7 @@
     />
     <HelloWorld
       userName="Bob"
-      profileImage="https://rosskeenan.com/wp-content/uploads/2020/07/Photo-Jul-10-7-22-30-PMsmaller-2.jpg"
+      profileImage="https://happymag.tv/wp-content/uploads/2020/09/bob-ross-FP.jpg"
     />
   </div>
 </template>
