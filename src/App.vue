@@ -1,7 +1,14 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld userName="RossKeenan" />
+    <HelloWorld
+      userName="RossKeenan"
+      profileImage="https://rosskeenan.com/wp-content/uploads/2020/07/Photo-Jul-10-7-22-30-PMsmaller-2.jpg"
+    />
+    <HelloWorld
+      userName="Bob"
+      profileImage="https://rosskeenan.com/wp-content/uploads/2020/07/Photo-Jul-10-7-22-30-PMsmaller-2.jpg"
+    />
   </div>
 </template>
 
