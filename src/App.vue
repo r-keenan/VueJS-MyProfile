@@ -5,10 +5,13 @@
       userName="RossKeenan"
       profileImage="https://rosskeenan.com/wp-content/uploads/2020/07/Photo-Jul-10-7-22-30-PMsmaller-2.jpg"
     />
-    <HelloWorld
+    <!--
+    <Commmenting out Bob. We only want one profile in the view at a time.
+      HelloWorld
       userName="Bob"
       profileImage="https://happymag.tv/wp-content/uploads/2020/09/bob-ross-FP.jpg"
     />
+    -->
   </div>
 </template>
 
