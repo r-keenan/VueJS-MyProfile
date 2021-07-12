@@ -21,12 +21,14 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 h1 {
   color: red;
 }
 
-.bio p {
-  font-style: italic;
+.bio {
+  p {
+    font-style: italic;
+  }
 }
 </style>
