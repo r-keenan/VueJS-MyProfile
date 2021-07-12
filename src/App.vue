@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld
+    <ProfilePage
       userName="RossKeenan"
       profileImage="https://rosskeenan.com/wp-content/uploads/2020/07/Photo-Jul-10-7-22-30-PMsmaller-2.jpg"
       userBio="My name is Ross, and I am learning Vue. I am liking it more than React and a lot more than Angular!"
@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ProfilePage from "./components/ProfilePage.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    ProfilePage,
   },
 };
 </script>

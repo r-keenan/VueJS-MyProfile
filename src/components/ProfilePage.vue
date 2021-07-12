@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "ProfilePage",
   data() {
     return {
       languages: [
