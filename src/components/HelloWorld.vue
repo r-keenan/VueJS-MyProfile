@@ -11,7 +11,10 @@
           {{ item.langName }} | Founded: {{ item.dateCreated }}
         </li>
       </ul>
-      <button v-on:click="click" v-on:mouseover="mouseover">Click Me</button>
+      <!-- prevents the default action of submitting the form onclick of the button. then the click function is called.-->
+      <form v-on:submit.prevent="click">
+        <button v-on:mouseover="mouseover">Click Me</button>
+      </form>
     </div>
   </div>
 </template>
