@@ -5,6 +5,12 @@
     <img :src="profileImage" width="250" />
     <div class="bio">
       <p>{{ userBio }}</p>
+      <ul>
+        <!--This loops over the languages array. Needs key, value pair. -->
+        <li v-for="(item, index) in languages" :key="index">
+          {{ item.langName }} | Founded: {{ item.dateCreated }}
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -12,6 +18,20 @@
 <script>
 export default {
   name: "HelloWorld",
+  data() {
+    return {
+      languages: [
+        {
+          langName: "Python",
+          dateCreated: "June 1990",
+        },
+        {
+          langName: "JavaScript",
+          dateCreated: "1995",
+        },
+      ],
+    };
+  },
   props: {
     userName: String,
     profileImage: String,
@@ -29,6 +49,9 @@ h1 {
 .bio {
   p {
     font-style: italic;
+  }
+  li {
+    list-style-type: none;
   }
 }
 </style>
