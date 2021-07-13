@@ -2,7 +2,10 @@
   <div class="profile">
     <h1>Hello {{ userName }}</h1>
     <!-- :src="profileImage" is the short hand way to bind the data.-->
-    <img :src="profileImage" width="250" />
+    <img
+      src="https://rosskeenan.com/wp-content/uploads/2020/07/Photo-Jul-10-7-22-30-PMsmaller-2.jpg"
+      width="250"
+    />
     <div class="bio">
       <p>{{ userBio }}</p>
       <ul>
