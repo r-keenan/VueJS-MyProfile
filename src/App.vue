@@ -1,11 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <ProfilePage
-      userName="RossKeenan"
-      profileImage="https://rosskeenan.com/wp-content/uploads/2020/07/Photo-Jul-10-7-22-30-PMsmaller-2.jpg"
-      userBio="My name is Ross, and I am learning Vue. I am liking it more than React and a lot more than Angular!"
-    />
+    <nav>
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li>
+          <router-link :to="{ name: 'ContactUs', params: { userName: 'Ross' } }"
+            >Contact Us</router-link
+          >
+        </li>
+      </ul>
+    </nav>
+    <router-view />
     <!--
     <Commmenting out Bob. We only want one profile in the view at a time.
       HelloWorld
@@ -17,13 +23,8 @@
 </template>
 
 <script>
-import ProfilePage from "./components/ProfilePage.vue";
-
 export default {
   name: "App",
-  components: {
-    ProfilePage,
-  },
 };
 </script>
 
@@ -35,5 +36,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+nav ul li {
+  margin-right: 20px;
+  list-style-type: none;
+  display: inline-block;
 }
 </style>
